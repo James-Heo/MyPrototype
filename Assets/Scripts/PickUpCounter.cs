@@ -39,7 +39,7 @@ public class PickUpCounter : MonoBehaviour
 		}
 	}
 
-	}
+	
 	// Update is called once per frame
 	void Update()
     {
