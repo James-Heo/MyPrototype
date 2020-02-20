@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class UFO : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+	[Header("Set in	Inspector")]
+	//	Prefab	for	instantiating	apples
+	public GameObject laserPrefab;
+	// Start is called before the first frame update
+	void Start()
     {
-        
+		Invoke("DropLaser", 2f);
     }
+
+
+	void DropLaser()
+	{
+		GameObject laser = Instantiate<GameObject> (laserPrefab);
+		laser.transform.position = transform.position;
+		Invoke("DropLaser", 2f);
+	}
 
 	// Update is called once per frame
 	void Update()
