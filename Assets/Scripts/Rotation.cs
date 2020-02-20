@@ -14,6 +14,9 @@ public class Rotation : MonoBehaviour
     //	Distance where pickup turns around
     public float leftAndRightEdge = 10f;
 
+    //attempt to make pickup move up and down
+    //public float upAndDownEdge = 8f;
+    
     //	Chance	that the pickup	will change directions
     public float chanceToChangeDirections = 0.1f;
 
@@ -50,6 +53,19 @@ public class Rotation : MonoBehaviour
         {
             speed = -Mathf.Abs(speed);
         }
+
+        //attempted to make it go up and down as well, though only diagnal resulted
+        //pos.y += speed * Time.deltaTime;
+        //transform.position = pos;
+
+        //if (pos.y < -upAndDownEdge)
+        //{
+        //    speed = Mathf.Abs(speed);
+        //}
+        //else if (pos.x > upAndDownEdge)
+        //{
+        //    speed = -Mathf.Abs(speed);
+        //}
     }
 
     void FixedUpdate()
