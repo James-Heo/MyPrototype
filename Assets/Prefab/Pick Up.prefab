@@ -122,3 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14978dd3e18401a4485c9170452e1c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupPrefab: {fileID: 0}
+  speed: 10
+  leftAndRightEdge: 10
+  chanceToChangeDirections: 0.1
+  secondsBetweenAppleDrops: 1
