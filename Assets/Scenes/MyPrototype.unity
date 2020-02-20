@@ -375,17 +375,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uitLevel: {fileID: 2090390166}
-  uitShots: {fileID: 2130202958}
-  uitButton: {fileID: 0}
   levelPos: {x: 0, y: 0, z: 0}
   setups:
-  - {fileID: 3984163497873081824, guid: cfa5a0c2510d68b4ebd7a4cf733bb75e, type: 3}
+  - {fileID: 3984163497873081824, guid: de721f6ee2af67a4d8111d256f414c14, type: 3}
   - {fileID: 3984163497873081824, guid: 57426cdc6ef91e747bcd1f4152d82bf4, type: 3}
   - {fileID: 3984163497873081824, guid: d03049b6f3186724fb8b919baef43c3e, type: 3}
-  - {fileID: 3984163497873081824, guid: de721f6ee2af67a4d8111d256f414c14, type: 3}
+  - {fileID: 3984163497873081824, guid: cfa5a0c2510d68b4ebd7a4cf733bb75e, type: 3}
   level: 0
   levelMax: 0
-  shotsTaken: 0
   setup: {fileID: 0}
   mode: 0
 --- !u!114 &963194230
