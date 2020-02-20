@@ -14,15 +14,12 @@ public class Levels : MonoBehaviour
 	static private Levels S; //	a	private	Singleton
 	[Header("Set in	Inspector")]
 	public Text uitLevel; //	The	UIText_Level	Text
-	public Text uitShots; //	The	UIText_Shots	Text
-	public Text uitButton; //	The	Text	on	UIButton_View
 	public Vector3 levelPos; //	The	place	to	put	setups
 	public GameObject[] setups;            //	An	array	of	the	setups/levels
 
 	[Header("Set Dynamically")]
 	public int level;                   //	The	current	level
 	public int levelMax;        //	The	number	of	levels
-	public int shotsTaken;
 	public GameObject setup;               //	The	current	castle
 	public GameMode mode = GameMode.idle;
 	
@@ -38,8 +35,6 @@ public class Levels : MonoBehaviour
 		
 		//	Instantiate	the	new	setup
 		setup = Instantiate<GameObject>(setups[level]);
-		//setup.transform.position = levelPos;
-		shotsTaken = 0;
 		
 		//	Reset	the	goal
 		Goal.goalMet = false;
@@ -50,7 +45,6 @@ public class Levels : MonoBehaviour
 	{
 		//	Show	the	data	in	the	GUITexts
 		uitLevel.text = "Level:	" + (level + 1) + " of " + levelMax;
-		uitShots.text = "Shots Taken: " + shotsTaken;
 	}
 	void Update()
 	{
@@ -73,10 +67,5 @@ public class Levels : MonoBehaviour
 			level = 0;
 		}
 		StartLevel();
-	}
-
-	public static void ShotFired()
-	{//	d
-		S.shotsTaken++;
 	}
 }
