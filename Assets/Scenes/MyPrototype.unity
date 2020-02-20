@@ -294,28 +294,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1891019339 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7094099316180665942, guid: 21b94f0f74a6e4149b242a3997f3a998,
-    type: 3}
-  m_PrefabInstance: {fileID: 2025729504}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1891019343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891019339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444b8418ed088704e819d63925c2edc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabLaser: {fileID: 6527981641842194452, guid: 8a59e799d161ed042a719fbf42ab26e9,
-    type: 3}
-  UFO: {x: 0, y: 0, z: 0}
-  laser: {fileID: 0}
 --- !u!1001 &2025729504
 PrefabInstance:
   m_ObjectHideFlags: 0

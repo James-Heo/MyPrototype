@@ -13,6 +13,15 @@ public class UFO : MonoBehaviour
 		Invoke("DropLaser", 2f);
     }
 
+	public void LaserDestroyed()
+	{
+		//	Destroy	all	of	the	falling	lasers
+		GameObject[] tLaserArray = GameObject.FindGameObjectsWithTag("Laser"); //	b
+		foreach (GameObject tGO in tLaserArray)
+		{
+			Destroy(tGO);
+		}
+	}
 
 	void DropLaser()
 	{
