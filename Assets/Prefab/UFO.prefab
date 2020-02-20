@@ -88,7 +88,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1886477680768618641}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -181,7 +181,7 @@ SphereCollider:
   m_GameObject: {fileID: 1931870503915846000}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 7696314545467861541}
   - component: {fileID: -3421583273110125300}
   - component: {fileID: 120809143352029980}
+  - component: {fileID: 1891019343}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
@@ -231,6 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cb0cf279c20f5439c66c7b1ba6d033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 6527981641842194452, guid: 8a59e799d161ed042a719fbf42ab26e9,
+    type: 3}
 --- !u!54 &120809143352029980
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -247,3 +250,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!122 &1891019343
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094099316180665942}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294049536
+  m_Size: 6
